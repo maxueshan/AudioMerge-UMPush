@@ -32,6 +32,7 @@
 		F21E1A1D1F77F4B100BF0409 /* BYFoundationLog.m in Sources */ = {isa = PBXBuildFile; fileRef = F21E1A1B1F77F4B100BF0409 /* BYFoundationLog.m */; };
 		F21E1A1F1F77F5E200BF0409 /* 〇.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F21E1A1E1F77F5E200BF0409 /* 〇.mp3 */; };
 		F21E1A201F77F5E200BF0409 /* 〇.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F21E1A1E1F77F5E200BF0409 /* 〇.mp3 */; };
+		F24636571F793AB6001469A2 /* Speaker.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BC06F11F753D6B00BAEC0F /* Speaker.m */; };
 		F2BC06D91F753D3F00BAEC0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BC06D81F753D3F00BAEC0F /* main.m */; };
 		F2BC06DF1F753D3F00BAEC0F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BC06DE1F753D3F00BAEC0F /* ViewController.m */; };
 		F2BC06E41F753D3F00BAEC0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2BC06E31F753D3F00BAEC0F /* Assets.xcassets */; };
@@ -374,6 +375,7 @@
 			files = (
 				F21E1A1D1F77F4B100BF0409 /* BYFoundationLog.m in Sources */,
 				F20EF00C1F769256005A9B7A /* NotificationService.m in Sources */,
+				F24636571F793AB6001469A2 /* Speaker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,7 +419,7 @@
 				DEVELOPMENT_TEAM = Z3LR52YC4H;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = RemotePushExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.com.gopay.gopwallet.enterprise.RemotePushExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -443,7 +445,7 @@
 				DEVELOPMENT_TEAM = Z3LR52YC4H;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = RemotePushExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.com.gopay.gopwallet.enterprise.RemotePushExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -550,7 +552,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = Z3LR52YC4H;
 				INFOPLIST_FILE = "友盟推送/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -569,7 +571,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = Z3LR52YC4H;
 				INFOPLIST_FILE = "友盟推送/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

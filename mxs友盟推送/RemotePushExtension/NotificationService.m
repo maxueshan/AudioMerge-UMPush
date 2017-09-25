@@ -1,4 +1,8 @@
-//
+/*
+ 
+mutable-content
+ 
+ */
 //  NotificationService.m
  /*
   当满足如下两个条件，应用收到远程推送时，应用会加载 extension 和调用 didReceiveNotificationRequest:withContentHandler:
@@ -19,6 +23,8 @@
   
   */
 #import "NotificationService.h"
+#import <AVFoundation/AVFoundation.h>
+#import "Speaker.h"
 
 @interface NotificationService ()
 
@@ -44,8 +50,15 @@
     self.bestAttemptContent.subtitle = @"extension:子标题";
     self.bestAttemptContent.body = @"extension:内容内容内容内容内容内容内容";
     
+    [[Speaker speechcontroller]beginConversation:[NSString stringWithFormat:@"通知拦截成功"]];
+
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        self.contentHandler(self.bestAttemptContent);
+        
+        
+    });
     
-    self.contentHandler(self.bestAttemptContent);
 }
 
 - (void)serviceExtensionTimeWillExpire {

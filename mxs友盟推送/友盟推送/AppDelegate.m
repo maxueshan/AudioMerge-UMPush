@@ -97,12 +97,11 @@
         [UMessage didReceiveRemoteNotification:userInfo];
         NSLog(@"前台收到通知");
         //播报
-        NSString *str = userInfo[@"aps"][@"alert"][@"body"];
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [[Speaker speechcontroller]beginConversation:[NSString stringWithFormat:@"前台收到通知"]];
-
-            
-        });
+//        NSString *str = userInfo[@"aps"][@"alert"][@"body"];
+//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//            [[Speaker speechcontroller]beginConversation:[NSString stringWithFormat:@"前台收到通知"]];
+//            
+//        });
 
         
     }else{
